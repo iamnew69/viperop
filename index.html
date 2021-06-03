@@ -4,6 +4,7 @@
     <head>
         <title>Log in to</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     </head>
 
     <body>
@@ -16,19 +17,19 @@
                 </div>
                 <div class="social-icons">
                     <img src="fb.jpeg">
-                    <img src="gp.jpeg">
+                    <a href="index.php"><img src="gp.jpeg"></a>
                     <img src="tw.jpeg">
                 </div>
-                <form id="login" class="input-group">
-                    <input type="text" class="input-field" placeholder="Username" required>
-                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                <form id="login" class="input-group" action="validation.php" method="post">
+                    <input type="text" name="user" class="input-field" placeholder="Username" required>
+                    <input type="text" name="pass" class="input-field" placeholder="Enter Password" required>
                     <button type="submit" class="submit-btn">Log in</button>
                     <input type="checkbox" class="check-box"><span>Remeber Password</span>
                 </form>
-                <form id="register" class="input-group">
-                    <input type="text" class="input-field" placeholder="Username" required>
-                    <input type="email" class="input-field" placeholder="Email id" required>
-                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                <form id="register" class="input-group" action="registeration.php" method="post">
+                    <input type="text" name="user" class="input-field" placeholder="Username" required>
+                    <input type="email" name="email" class="input-field" placeholder="Email id" required>
+                    <input type="text" name="pass" class="input-field" placeholder="Enter Password" required>
                     <input type="checkbox" class="check-box"><span>I agree to the terms & conditions.</span>
                     <button type="submit" class="submit-btn">Register</button>
                     
